@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = ""
+authors = ["tainahcarvalho21 <tainah.carvalho@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
