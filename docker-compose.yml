@@ -1,7 +1,14 @@
 services:
   api:
     build: .
+    command: "poetry run python3 api/manage.py runserver 0.0.0.0:8000"
     ports:
-      - "8000:5000"
+      - "8000:8000"
     volumes:
       - ./:/usr/src/app
+  mySQL: 
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: example

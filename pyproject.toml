@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 sqlalchemy = "*"
+Django = "^4.2.6"
 
 
 [build-system]
